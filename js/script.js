@@ -23,13 +23,14 @@ function formSubmit(e) {
 
   if (input.value === '') {
     errMsg.innerHTML = 'Please enter something';
-    input.classList.add('border-red');
+    // alert('Nallie');
+    input.classList.add('border-red'); // border will not work
   } else if (!validURL(input.value)) {
     errMsg.innerHTML = 'Please enter a valid URL';
-    input.classList.add('border-red');
+    input.classList.add('border-red'); // border will not work
   } else {
     errMsg.innerHTML = '';
-    input.classList.remove('border-red');
+    input.classList.remove('border-red'); // border will not work
     alert('Success');
   }
 }
