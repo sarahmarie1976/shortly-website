@@ -30,13 +30,13 @@
           <img src="images/logo.svg" alt="" />
           <!-- Left Menu -->
           <div class="hidden space-x-8 font-bold lg:flex">
-            <a href="#" class="text-grayishViolet hover:text-veryDarkViolet"
+            <a href="#" class="navbar-items"
               >Features</a
             >
-            <a href="#" class="text-grayishViolet hover:text-veryDarkViolet"
+            <a href="#" class="navbar-items"
               >Pricing</a
             >
-            <a href="#" class="text-grayishViolet hover:text-veryDarkViolet"
+            <a href="#" class="navbar-items"
               >Resources</a
             >
           </div>
@@ -53,9 +53,36 @@
             >Signup</a
           >
         </div>
-        <!-- ToDo Hamburger Menu -->
+        <!-- Hamburger Button -->
+        <button
+          id="menu-btn"
+          class="block hamburger lg:hidden focus:outline-none"
+          type="button"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
 
-        <!-- ToDo Mobile Menu -->
+      <!-- Mobile Menu -->
+      <div
+        id="menu"
+        class="absolute hidden p-6 rounded-lg bg-darkViolet left-6 right-6 top-20 z-100"
+      >
+        <div
+          class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm"
+        >
+          <a href="#" class="w-full text-center">Features</a>
+          <a href="#" class="w-full text-center">Pricing</a>
+          <a href="#" class="w-full text-center">Resources</a>
+          <a href="#" class="w-full pt-6 border-t border-gray-400 text-center"
+            >Login</a
+          >
+          <a href="#" class="w-full py-3 text-center rounded-full bg-cyan"
+            >Sign Up</a
+          >
+        </div>
       </div>
     </nav>
 
@@ -303,41 +330,41 @@
         <div class="flex flex-col space-y-16 md:space-x-20 md:flex-row md:space-y-0">
 
           <!-- Menu Items 1 -->
-          <div class="flex flex-col items-center w-full md:items-start">  
-            <div class="mb-5 font-bold text-white capitalize">
+          <div class="menu-container">  
+            <div class="menu-title">
               Features
             </div>
             <div class="flex flex-col items-center space-y-3 md:items-start">
-              <a href="#" class="capitalize text-grayishViolet hover:text-cyan">Link shortening</a>
-              <a href="#" class="capitalize text-grayishViolet hover:text-cyan">Branded Links</a>
-              <a href="#" class="capitalize text-grayishViolet hover:text-cyan">Analytic</a>
+              <a href="#" class="menu-items">Link shortening</a>
+              <a href="#" class="menu-items">Branded Links</a>
+              <a href="#" class="menu-items">Analytic</a>
             </div>
           </div>
           
 
           <!-- Menu Items 2 -->
-          <div class="flex flex-col items-center w-full md:items-start">  
-            <div class="mb-5 font-bold text-white capitalize">
+          <div class="menu-container">  
+            <div class="menu-title">
               Resources
             </div>
             <div class="flex flex-col items-center space-y-3 md:items-start">
-              <a href="#" class="capitalize text-grayishViolet hover:text-cyan">Blog</a>
-              <a href="#" class="capitalize text-grayishViolet hover:text-cyan">Developers</a>
-              <a href="#" class="capitalize text-grayishViolet hover:text-cyan">Support</a>
+              <a href="#" class="menu-items">Blog</a>
+              <a href="#" class="menu-items">Developers</a>
+              <a href="#" class="menu-items">Support</a>
             </div>
           </div>
           
 
           <!-- Menu Items 3 -->
-          <div class="flex flex-col items-center w-full md:items-start">  
-            <div class="mb-5 font-bold text-white capitalize">
+          <div class="menu-container">  
+            <div class="menu-title">
               Company
             </div>
             <div class="flex flex-col items-center space-y-3 md:items-start">
-              <a href="#" class="capitalize text-grayishViolet hover:text-cyan">About</a>
-              <a href="#" class="capitalize text-grayishViolet hover:text-cyan">Our Team</a>
-              <a href="#" class="capitalize text-grayishViolet hover:text-cyan">Careers</a>
-              <a href="#" class="capitalize text-grayishViolet hover:text-cyan">Contact</a>
+              <a href="#" class="menu-items">About</a>
+              <a href="#" class="menu-items">Our Team</a>
+              <a href="#" class="menu-items">Careers</a>
+              <a href="#" class="menu-items">Contact</a>
             </div>
           </div>
         </div>
